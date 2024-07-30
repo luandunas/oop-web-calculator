@@ -1,6 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-h1{
-    font-family: 'Montserrat';
-    font-weight: 400;
+:root{
+    --background-color: #2E2F38;
+    --hover-color:  #4B5EFC;
+    --second-color: #4E505F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__buttons__row {
+    display: flex;
+}
+
+main,
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 85vh;
+}
+
+header {
+    height: 10vh;
+}
+
+#calculator {
+    width: 30%;
+    height: 100%;
+    background-color: #17171C;
+    color: white;
+}
+
+#calculator__display {
+    height: 30%;
+}
+
+#calculator__buttons {
+    height: 70%;
+}
+
+.calculator__buttons__row {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.calculator__buttons__row__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25%;
+    border-radius: 25%;
+    background-color: #2E2F38;
+    width: 20%;
+}
+
+.calculator__buttons__row__button:hover{
+    background-color: var(--hover-color);
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.math_operation{
+    background-color: var(--second-color);
 }
