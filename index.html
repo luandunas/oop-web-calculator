@@ -8,19 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>JS Oriented Object Calculator</h1>
+        <h1>Javascript Oriented Object Calculator</h1>
     </header>
     <main>
         <section id="calculator">
             <div id="calculator__display">
-                <div id="calculator__display__upperNumber">0</div>
-                <div id="calculator__display__resultNumber">0</div>
+                <div id="calculator__display__upperNumber">1,234.5</div>
+                <div id="calculator__display__resultNumber">6,789.0</div>
             </div>
 
             <div id="calculator__buttons">
                 <div class="calculator__buttons__row">
-                    <div class="calculator__buttons__row__button" id="calculator__buttons__row__button_ac">AC</div>
-                    <div class="calculator__buttons__row__button math_operation" id="calculator__buttons__row__button_division">/</div>
+                    <div class="calculator__buttons__row__button top_buttons" id="calculator__buttons__row__button_c">AC</div>
+                    <div class="calculator__buttons__row__button top_buttons math_operation" id="calculator__buttons__row__button_plus_minus">+/-</div>
+                    <div class="calculator__buttons__row__button top_buttons math_operation" id="calculator__buttons__row__button_percentage">%</div>
+                    <div class="calculator__buttons__row__button math_operation" id="calculator__buttons__row__button_division">+/-</div>
                 </div>
                 <div class="calculator__buttons__row">
                     <div class="calculator__buttons__row__button">7</div>
@@ -41,7 +43,9 @@
                     <div class="calculator__buttons__row__button math_operation" id="calculator__buttons__row__button_plus">+</div>
                 </div>
                 <div class="calculator__buttons__row">
+                    <div class="calculator__buttons__row__button" id="calculator__buttons__row__button_plus">.</div>
                     <div class="calculator__buttons__row__button" id="calculator__buttons__row__button_zero">0</div>
+                    <div class="calculator__buttons__row__button" id="calculator__buttons__row__button_plus">C</div>
                     <div class="calculator__buttons__row__button math_operation" id="calculator__buttons__row__button_equals">=</div>
                 </div>
             </div>

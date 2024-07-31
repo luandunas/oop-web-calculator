@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root{
-    --background-color: #2E2F38;
-    --hover-color:  #4B5EFC;
-    --second-color: #4E505F;
+    --background-color: #17171C;
+    --second-color:  #4B5EFC;
+    --hover-color: #4E505F;
 }
 
 * {
@@ -29,6 +29,18 @@ header {
     align-items: center;
 }
 
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    background-color: var(--background-color);
+    color: rgba(255, 255, 255, .5);
+    font-size: 1rem;
+}
+
 main {
     height: 85vh;
 }
@@ -40,12 +52,36 @@ header {
 #calculator {
     width: 30%;
     height: 100%;
-    background-color: #17171C;
+    background-color: var(--background-color);
     color: white;
 }
 
 #calculator__display {
     height: 30%;
+    font-size: 2rem;
+}
+
+#calculator__display__upperNumber{
+    height: 60%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 2rem;
+    opacity: .4;
+    word-wrap: break-word
+}
+
+#calculator__display__resultNumber{
+    height: 40%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    font-size: 4rem;
+    overflow: hidden;
 }
 
 #calculator__buttons {
@@ -66,6 +102,7 @@ header {
     border-radius: 25%;
     background-color: #2E2F38;
     width: 20%;
+    font-size: 2rem;
 }
 
 .calculator__buttons__row__button:hover{
@@ -76,4 +113,8 @@ header {
 
 .math_operation{
     background-color: var(--second-color);
+}
+
+.top_buttons{
+    background-color: var(--hover-color);
 }
